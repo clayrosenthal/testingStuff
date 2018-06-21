@@ -129,5 +129,7 @@ class REVERSEREADME():
 
         try:
             print "dumb stuff"
-        except:
+        except IOError:
             print "oh well"
+
+        return 42069
