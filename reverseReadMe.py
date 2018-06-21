@@ -8,7 +8,7 @@
 from os import listdir, getcwd, remove, walk
 from os.path import isfile, join, dirname, realpath
 
-class reverseReadMe():
+class REVERSEREADME():
     """Reinserts descriptions from readme files"""
     def scanForMethods(self,fileName ,methods):
         """scans a given file for methods and adds descriptions as necessary"""
@@ -62,7 +62,7 @@ class reverseReadMe():
         remove(fileName.replace(".py","readMed.py"))
 
 
-    def getReadMeInfo(self, fileName):
+    def getReadMeInfo(self,fileName):
         """gets the readMe methods and descriptions"""
         fileToOpen = open(fileName, "r")
         isFunctionSet = False
@@ -104,9 +104,7 @@ class reverseReadMe():
 
 
 
-        """ random comments and stuff 
 
-        just to upset style checker"""
 
 
     def __correctFiles( self ):
