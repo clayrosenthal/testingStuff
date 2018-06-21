@@ -19,7 +19,7 @@ class HashTableQuadPr:
         return self.filled / len(self.table)
 
 
-    def myhash(self, key, table_size):
+    def my_hash(self, key, table_size):
         # computes a hash
         hash_val = 0
         length = len(key)-1 if len(key)-1 < 8 else 8
