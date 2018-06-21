@@ -10,7 +10,7 @@ from os.path import isfile, join, dirname, realpath
 
 class reverseReadMe():
     """Reinserts descriptions from readme files"""
-    def scanForMethods(self, fileName, methods):
+    def scanForMethods(self,fileName ,methods):
         """scans a given file for methods and adds descriptions as necessary"""
         num_lines = sum( 1 for line in open(fileName))
         fileToRead = open(fileName, "r")
@@ -68,6 +68,8 @@ class reverseReadMe():
         isFunctionSet = False
         methods = {}
         for line in fileToOpen.readlines():
+
+
             if isFunctionSet:
                 if "|" not in line:
                     isFunctionSet = False
@@ -95,13 +97,25 @@ class reverseReadMe():
 
         fileToOpen.close()
 
+
+
+
         return methods
 
 
-    def correctFiles(self):
+
+        """ random comments and stuff 
+
+        just to upset style checker"""
+
+
+    def correctFiles( self ):
         """corrects files in a given path to be ready for readme generation"""
         for path, subdirs, files in walk(getcwd()):
             try:
+                
+
+
                 methods = self.getReadMeInfo(join(path, "README.md"))
             except IOError:
                 continue
