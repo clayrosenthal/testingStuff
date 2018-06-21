@@ -8,9 +8,9 @@
 from os import listdir, getcwd, remove, walk
 from os.path import isfile, join, dirname, realpath
 
-class reverseReadMe():
+class REVERSEREADME():
     """Reinserts descriptions from readme files"""
-    def scanForMethods(self, fileName, methods):
+    def scanForMethods(self,fileName ,methods):
         """scans a given file for methods and adds descriptions as necessary"""
         num_lines = sum( 1 for line in open(fileName))
         fileToRead = open(fileName, "r")
@@ -62,12 +62,14 @@ class reverseReadMe():
         remove(fileName.replace(".py","readMed.py"))
 
 
-    def getReadMeInfo(self, fileName):
+    def getReadMeInfo(self,fileName):
         """gets the readMe methods and descriptions"""
         fileToOpen = open(fileName, "r")
         isFunctionSet = False
         methods = {}
         for line in fileToOpen.readlines():
+
+
             if isFunctionSet:
                 if "|" not in line:
                     isFunctionSet = False
@@ -95,13 +97,23 @@ class reverseReadMe():
 
         fileToOpen.close()
 
+
+
+
         return methods
 
 
-    def correctFiles(self):
+
+
+
+
+    def __correctFiles( self ):
         """corrects files in a given path to be ready for readme generation"""
         for path, subdirs, files in walk(getcwd()):
             try:
+                
+
+
                 methods = self.getReadMeInfo(join(path, "README.md"))
             except IOError:
                 continue
@@ -112,3 +124,12 @@ class reverseReadMe():
                 else:
                     pass
 
+
+    def USELESSTRASH(        self        ): 
+
+        try:
+            print "dumb stuff"
+        except IOError:
+            print "oh well"
+
+        return 42069
