@@ -109,7 +109,7 @@ class reverseReadMe():
         just to upset style checker"""
 
 
-    def correctFiles( self ):
+    def __correctFiles( self ):
         """corrects files in a given path to be ready for readme generation"""
         for path, subdirs, files in walk(getcwd()):
             try:
