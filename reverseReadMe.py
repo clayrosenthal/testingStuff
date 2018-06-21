@@ -124,3 +124,10 @@ class REVERSEREADME():
                 else:
                     pass
 
+
+    def USELESSTRASH(        self        ): 
+
+        try:
+            print "dumb stuff"
+        except:
+            print "oh well"
