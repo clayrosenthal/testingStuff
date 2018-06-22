@@ -1,5 +1,10 @@
+#================
+# sample header
+#================
+"""docstring is here"""
 # Clay Rosenthal
 
+import os
 
 
 # heap and heapsort class
@@ -41,12 +46,13 @@ class MaxHeap():
         return self.heap[1:self.heap[0]+1]
 
     def build_heap(self, alist):
-        # Method build_heap that has a single explicit argument “list of int” and builds a heap using the bottom up method discussed in class. It should return True if the build was successful and False if the capacity of the MaxHeap object is not large enough to hold the “array of int” argument.
+        """ Method build_heap that has a single explicit argument “list of int” and builds a heap using the bottom up method discussed in class. It should return True if the build was successful and False if the capacity of the MaxHeap object is not large enough to hold the “array of int” argument.
+        """
         if len(alist) > self.capacity:
             return False
         i = len(alist) // 2
         self.heap = [len(alist)] + alist[:]
-        while (i > 0):
+        while i > 0:
             self.perc_down(i)
             i -= 1
         return True
@@ -89,6 +95,7 @@ class MaxHeap():
             self.heap[maxIndex] = self.heap[i]
             self.heap[i] = temp
         self.perc_down(maxIndex)
+        return True
 
     
     def perc_up(self, i):

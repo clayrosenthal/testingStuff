@@ -5,7 +5,6 @@
 # huffman encoding and decoding
 
 def comes_before(a, b):
-	#  "" returns true if tree rooted at node a comes before tree rooted at node b """
     """ returns true if tree rooted at node a comes before tree rooted at node b """
     if a.freq < b.freq:
         return True
@@ -17,7 +16,6 @@ def comes_before(a, b):
 
 def combine(a, b):
     """ creates a new huffman node with children a and b with combined freq with name of the right child """
-	#  "" creates a new huffman node with children a and b with combined freq with name of the right child """
     new_node = HuffmanNode(b.char, a.freq+b.freq)
     new_node.set_left(b)
     new_node.set_right(a)
