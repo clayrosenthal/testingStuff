@@ -11,7 +11,7 @@ class checksForHeader(BaseChecker):
  
     name = 'header-missing-checker'
  
-    HEADER_WARNING = 'header-missing'
+    HEADER_WARNING = 'header-incorrect'
     
     # here we define our messages
     msgs = {
@@ -35,36 +35,42 @@ class checksForHeader(BaseChecker):
         descCheck = False
 
         for toknum, tokval, strt, end, line in tokenStuff:
-            if ((strt[0] == 1 or strt[0] == 6) and toknum != tokenize.COMMENT
-                and headerStartDefault not in line and not barsCheck):
+            if ((strt[0] == 1 or strt[0] == 6) and 
+                    (toknum != tokenize.COMMENT and toknum != tokenize.NL)
+                    and headerStartDefault not in line and not barsCheck):
 
-                print "bars:", toknum, tokenize.COMMENT
+                # print "bars:", toknum, tokenize.COMMENT
                 barsCheck = True
                 args = "bars on line " + str(strt[0])
                 self.add_message(
                     self.HEADER_WARNING, node=node, args=args
                 )
-            elif (strt[0] == 2 and toknum != tokenize.COMMENT
-                and "Created on:" not in line and not createCheck):
+            elif (strt[0] == 2 and 
+                    (toknum != tokenize.COMMENT and toknum != tokenize.NL)
+                    and "Created on:" not in line and not createCheck):
 
-                print "create:", toknum, tokenize.COMMENT
+                # print "create:", toknum, tokenize.COMMENT
                 createCheck = True
                 args = "creation date on line " + str(strt[0])
                 self.add_message(
                     self.HEADER_WARNING, node=node, args=args
                 )
-            elif (strt[0] == 3 and toknum != tokenize.COMMENT
-                and "Author:" not in line and not authorCheck):
+            elif (strt[0] == 3 and 
+                    (toknum != tokenize.COMMENT and toknum != tokenize.NL)
+                    and "Author:" not in line and not authorCheck):
 
-                print "author:", toknum, tokenize.COMMENT
+                # print "author:", toknum, tokenize.COMMENT
                 authorCheck = True
                 args = "author on line " + str(strt[0])
                 self.add_message(
                     self.HEADER_WARNING, node=node, args=args
                 )
-            elif strt[0] == 5 and toknum != tokenize.COMMENT and not descCheck:
+            elif (strt[0] == 5 and 
+                    (toknum != tokenize.COMMENT and toknum != tokenize.NL)
+                    and not descCheck):
+
                 descCheck = True
-                print "description:", toknum, tokenize.COMMENT
+                # print "description:", toknum, tokenize.COMMENT
                 args = "description on line " + str(strt[0])
                 self.add_message(
                     self.HEADER_WARNING, node=node, args=args
