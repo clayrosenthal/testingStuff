@@ -1,9 +1,9 @@
-#=============================================================================== pylint: disable=missing-docstring,line-too-long
+#=============================================================================== pylint: disable=missing-docstring
 # Created on: today
 # Author: me
 #
 # tests how well the plugin checks headers
-#=============================================================================== pylint: enable=missing-docstring,line-too-long
+#=============================================================================== pylint: enable=missing-docstring
 
 def someMethod(arg1, arg2, arg3):
 

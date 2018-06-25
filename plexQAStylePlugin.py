@@ -2,12 +2,13 @@ import astroid
 import tokenize
  
 from pylint.interfaces import IAstroidChecker
+from pylint.interfaces import IRawChecker
 from pylint.checkers import BaseChecker
  
  
 class checksForHeader(BaseChecker):
     """checker to check if a file has a header"""
-    __implements__ = IAstroidChecker
+    __implements__ = IRawChecker
  
     name = 'header-missing-checker'
  
@@ -22,59 +23,35 @@ class checksForHeader(BaseChecker):
     options = ()
  
     priority = -1
+
  
-    def visit_module(self, node):
-        """Defines what pylint should look for in the header"""
-        headerStartDefault = "#==============================================================================="
-        tokenFile = open(str(node.file), "rb").next
-        tokenStuff = tokenize.generate_tokens(tokenFile)
-
-        barsCheck = False
-        createCheck = False
-        authorCheck = False
-        descCheck = False
-
-        for toknum, tokval, strt, end, line in tokenStuff:
-            if ((strt[0] == 1 or strt[0] == 6) and 
-                    (toknum != tokenize.COMMENT and toknum != tokenize.NL)
-                    and headerStartDefault not in line and not barsCheck):
-
-                # print "bars:", toknum, tokenize.COMMENT
-                barsCheck = True
-                args = "bars on line " + str(strt[0])
-                self.add_message(
-                    self.HEADER_WARNING, node=node, args=args
-                )
-            elif (strt[0] == 2 and 
-                    (toknum != tokenize.COMMENT and toknum != tokenize.NL)
-                    and "Created on:" not in line and not createCheck):
-
-                # print "create:", toknum, tokenize.COMMENT
-                createCheck = True
-                args = "creation date on line " + str(strt[0])
-                self.add_message(
-                    self.HEADER_WARNING, node=node, args=args
-                )
-            elif (strt[0] == 3 and 
-                    (toknum != tokenize.COMMENT and toknum != tokenize.NL)
-                    and "Author:" not in line and not authorCheck):
-
-                # print "author:", toknum, tokenize.COMMENT
-                authorCheck = True
-                args = "author on line " + str(strt[0])
-                self.add_message(
-                    self.HEADER_WARNING, node=node, args=args
-                )
-            elif (strt[0] == 5 and 
-                    (toknum != tokenize.COMMENT and toknum != tokenize.NL)
-                    and not descCheck):
-
-                descCheck = True
-                # print "description:", toknum, tokenize.COMMENT
-                args = "description on line " + str(strt[0])
-                self.add_message(
-                    self.HEADER_WARNING, node=node, args=args
-                )
+    def process_module(self, node):
+        """defining what to look for in the header of the file"""
+        headerStartDefault = (
+        "#===============================================================================")
+        with node.stream() as stream:
+            for (linenum, line) in enumerate(stream):
+                if (linenum == 0 or linenum == 5) and headerStartDefault not in line:
+                    args = "bars on line " + str(linenum+1)
+                    self.add_message(
+                        self.HEADER_WARNING, args=args, line=linenum
+                    )
+                elif linenum == 1 and "Created on:" not in line:
+                    args = "creation date on line " + str(linenum+1)
+                    self.add_message(
+                        self.HEADER_WARNING, args=args, line=linenum
+                    )
+                elif linenum == 2 and "Author:"  not in line:
+                    args = "author on line " + str(linenum+1)
+                    self.add_message(
+                        self.HEADER_WARNING, args=args, line=linenum
+                    )
+                elif linenum == 4 and "# " not in line:
+                    args = "description on line " + str(linenum+1)
+                    self.add_message(
+                        self.HEADER_WARNING, args=args, line=linenum
+                    )
+                    
  
 def register(linter):
     """required method to auto register this checker"""
