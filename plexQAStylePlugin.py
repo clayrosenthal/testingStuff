@@ -5,11 +5,11 @@ from pylint.checkers import BaseChecker
 class checksForHeader(BaseChecker):
     """checker to check if a file has a header"""
     __implements__ = IRawChecker
- 
+
     name = 'header-missing-checker'
- 
+
     HEADER_WARNING = 'header-incorrect'
-    
+
     # here we define our messages
     msgs = {
         'F0420': ('Standard header is missing %s',
@@ -17,10 +17,10 @@ class checksForHeader(BaseChecker):
                   'Refer to project rules on wiki'),
     }
     options = ()
- 
+
     priority = -10
 
- 
+
     def process_module(self, node):
         """defining what to look for in the header of the file"""
         headerStartDefault = (
@@ -47,8 +47,8 @@ class checksForHeader(BaseChecker):
                     self.add_message(
                         self.HEADER_WARNING, args=args, line=linenum
                     )
-                    
- 
+
+
 def register(linter):
     """required method to auto register this checker"""
     linter.register_checker(checksForHeader(linter))
