@@ -61,7 +61,7 @@ class HashTableQuadPr:
     def read_stop (self, filename): # read words from a stop words file and insert them into hash table
         fileToOpen = open(filename, "r")
         for line in fileToOpen.readlines():
-            line = self.find_words(line)[0]
+            line = find_words(line)[0]
             self.insert(line, line)
         fileToOpen.close()
 
@@ -84,7 +84,7 @@ class HashTableQuadPr:
         fileToOpen = open(filename, "r")
         lineNum = 1
         for line in fileToOpen.readlines():
-            words = self.find_words(line)
+            words = find_words(line)
             for word in words:
                 if not stop_table.find(word):
                     self.insert(word, lineNum)
@@ -113,7 +113,7 @@ class HashTableQuadPr:
         words = []
         for element in self.table:
             if element is not None:
-                words.append(self.pair_to_string(element[0], element[1]))
+                words.append(pair_to_string(element[0], element[1]))
         words.sort()
         lines = []
         for word in words:
