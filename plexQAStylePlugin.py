@@ -1,7 +1,7 @@
 from pylint.interfaces import IRawChecker
 from pylint.checkers import BaseChecker
 
- 
+
 class checksForHeader(BaseChecker):
     """checker to check if a file has a header"""
     __implements__ = IRawChecker

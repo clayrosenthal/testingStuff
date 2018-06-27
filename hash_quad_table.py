@@ -10,7 +10,7 @@ class HashTableQuadPr:
         self.filled = 0
         self.table = [None]*size
 
-    
+
     def get_tablesize(self): # returns the size of the hash table
         return len(self.table)
     
@@ -19,7 +19,7 @@ class HashTableQuadPr:
         return self.filled / len(self.table)
 
 
-    def my_hash(self, key, table_size):
+    def my_hash(key, table_size):
         # computes a hash
         hash_val = 0
         length = len(key)-1 if len(key)-1 < 8 else 8
@@ -91,7 +91,7 @@ class HashTableQuadPr:
             lineNum += 1
         fileToOpen.close()
 
-    def find_words(self, line):
+    def find_words(line):
         word = ""
         words = []
         for ch in line:
@@ -122,5 +122,5 @@ class HashTableQuadPr:
         fileToOpen.close()
 
 
-    def pair_to_string(self, key, items):
+    def pair_to_string(key, items):
         return key + ":\t" + " ".join(str(item) for item in items)
