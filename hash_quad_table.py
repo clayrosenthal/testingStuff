@@ -10,7 +10,7 @@ class HashTableQuadPr:
         self.filled = 0
         self.table = [None]*size
 
-    
+
     def get_tablesize(self): # returns the size of the hash table
         return len(self.table)
     
@@ -19,7 +19,7 @@ class HashTableQuadPr:
         return self.filled / len(self.table)
 
 
-    def my_hash(self, key, table_size):
+    def my_hash(key, table_size):
         # computes a hash
         hash_val = 0
         length = len(key)-1 if len(key)-1 < 8 else 8
@@ -61,7 +61,7 @@ class HashTableQuadPr:
     def read_stop (self, filename): # read words from a stop words file and insert them into hash table
         fileToOpen = open(filename, "r")
         for line in fileToOpen.readlines():
-            line = self.find_words(line)[0]
+            line = find_words(line)[0]
             self.insert(line, line)
         fileToOpen.close()
 
@@ -84,14 +84,14 @@ class HashTableQuadPr:
         fileToOpen = open(filename, "r")
         lineNum = 1
         for line in fileToOpen.readlines():
-            words = self.find_words(line)
+            words = find_words(line)
             for word in words:
                 if not stop_table.find(word):
                     self.insert(word, lineNum)
             lineNum += 1
         fileToOpen.close()
 
-    def find_words(self, line):
+    def find_words(line):
         word = ""
         words = []
         for ch in line:
@@ -113,7 +113,7 @@ class HashTableQuadPr:
         words = []
         for element in self.table:
             if element is not None:
-                words.append(self.pair_to_string(element[0], element[1]))
+                words.append(pair_to_string(element[0], element[1]))
         words.sort()
         lines = []
         for word in words:
@@ -122,5 +122,5 @@ class HashTableQuadPr:
         fileToOpen.close()
 
 
-    def pair_to_string(self, key, items):
+    def pair_to_string(key, items):
         return key + ":\t" + " ".join(str(item) for item in items)

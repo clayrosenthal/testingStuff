@@ -123,13 +123,3 @@ class REVERSEREADME():
                     self.scanForMethods(file, methods)
                 else:
                     pass
-
-
-    def USELESSTRASH(        self        ): 
-
-        try:
-            print "dumb stuff"
-        except IOError:
-            print "oh well"
-
-        return 42069
