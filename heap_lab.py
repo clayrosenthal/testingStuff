@@ -4,9 +4,6 @@
 """docstring is here"""
 # Clay Rosenthal
 
-import os
-
-
 # heap and heapsort class
 
 class MaxHeap():
