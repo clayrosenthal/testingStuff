@@ -18,6 +18,7 @@ def someMethod(arg1, arg2, arg3):
     words = [linesOfRandomCode2, linesOfStuff]
     return aVariable * arg2 + arg1 * arg3
 
+
 def someOtherMethod(arg4, arg5):
     """fake as hell"""
     bVariable = """pretends to do stuff and
