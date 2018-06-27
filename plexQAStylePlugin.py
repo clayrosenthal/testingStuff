@@ -1,7 +1,3 @@
-import astroid
-import tokenize
- 
-from pylint.interfaces import IAstroidChecker
 from pylint.interfaces import IRawChecker
 from pylint.checkers import BaseChecker
  
@@ -16,13 +12,13 @@ class checksForHeader(BaseChecker):
     
     # here we define our messages
     msgs = {
-        'W0420': ('Standard header is missing %s',
+        'F0420': ('Standard header is missing %s',
                   HEADER_WARNING,
                   'Refer to project rules on wiki'),
     }
     options = ()
  
-    priority = -1
+    priority = -10
 
  
     def process_module(self, node):
