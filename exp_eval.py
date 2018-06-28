@@ -15,7 +15,7 @@ def infix_to_postfix(infix_expr):
     for part in expression:
         # part = expression[i]
         if not check_num(part):
-            if (part==')'):
+            if (part == ')'):
                 while (operands.peek() != '('):
                     to_process.append(str(operands.pop()))
                 operands.pop()
@@ -52,8 +52,8 @@ def postfix_eval(postfix_expr):
             # print("Number: " + str(nums.peek()));
         else:
             # print("Operation: "+ to_process[0]);
-            if to_process[0] in ["+","-","*","/","^"]:
-                nums.push(do_math(nums.pop(),nums.pop(),to_process[0]))
+            if to_process[0] in ["+", "-", "*", "/", "^"]:
+                nums.push(do_math(nums.pop(), nums.pop(), to_process[0]))
                 del to_process[0]
             else:
                 del to_process[0]
@@ -74,27 +74,24 @@ def operandOnTop(operand, operands):
         return True
     elif ((operand=='-' or operand=='+') and not(top=='^' or top=='*' or top=='/' or top=='-' or top=='+')):
         return True
-    else:
-        return False
+    return False
 
 def do_math(num1, num2, operand):
 	#   calculates the operation done on two operands
     """ takes in a set of numbers and the operand to compute them with"""
-    if (operand=='^'):
+    if (operand == '^'):
         if num1 == 0 and num2 == 0:
             raise ValueError
-        return num2**num1
-    elif (operand=='*'):
-        return (num2*num1)
-    elif (operand=='/'):
+        return num2 ** num1
+    elif (operand == '*'):
+        return (num2 * num1)
+    elif (operand == '/'):
         if num1 == 0:
             raise ValueError
-        return (num2/num1)
-    elif (operand=='-'):
-        return num2-num1
-    elif (operand=='+'):
-        return num2+num1
-    return num1+num2
+        return (num2 / num1)
+    elif (operand == '-'):
+        return num2 - num1
+    return num2 + num1
 
 def check_num(num):
 	#  "" sees if a string is a valid number """
@@ -104,7 +101,7 @@ def check_num(num):
     isNum = True
     decimal = False
     for ch in num:
-        if ch not in ["0","1","2","3","4","5","6","7","8","9","-","."]:
+        if ch not in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "-", "."]:
             return False
         elif ch == ".":
             if not decimal:
