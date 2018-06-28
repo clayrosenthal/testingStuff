@@ -12,7 +12,7 @@ class checksForHeader(BaseChecker):
 
     # here we define our messages
     msgs = {
-        'F0420': ('Standard header is missing %s',
+        'C0411': ('Standard header is missing %s',
                   HEADER_WARNING,
                   'Refer to project rules on wiki'),
     }
