@@ -16,19 +16,19 @@ def infix_to_postfix(expressionRaw):
                 while (operands.peek() != '('):
                     to_process.append(str(operands.pop()))
                 operands.pop()
-                print("Operand: " + part);
+                print(("Operand: " + part));
             else:
                 while (not operandOnTop(part, operands)):
                     to_process.append(str(operands.pop()))
                 operands.push(part);
-                print("Operand: " + part);
+                print(("Operand: " + part));
         else:
             numsCounter += 1
             to_process.append(int(part))
     while (not operands.is_empty()):
         to_process.append(str(operands.pop()))
     postfix_expression = " ".join(str(thing) for thing in to_process)
-    print("Postfix Expression Ready: " + postfix_expression)
+    print(("Postfix Expression Ready: " + postfix_expression))
     return postfix_expression
 
 
@@ -40,12 +40,12 @@ def postfix_eval(expression):
         if (to_process[0].isdigit()):
             nums.push(int(to_process[0]))
             del to_process[0]
-            print("Number: " + str(nums.peek()));
+            print(("Number: " + str(nums.peek())));
         else:
-            print("Operation: "+ to_process[0]);
+            print(("Operation: "+ to_process[0]));
             nums.push(do_math(nums.pop(),nums.pop(),to_process[0]))
             del to_process[0]
-            print("Calculation complete: " + str(nums.peek()))
+            print(("Calculation complete: " + str(nums.peek())))
     return nums.pop()
 
 
@@ -150,4 +150,4 @@ class Node:
         self.next = next_in
     def get_next(self):
         # gets the next node
-        return self.next
+        return self.__next__

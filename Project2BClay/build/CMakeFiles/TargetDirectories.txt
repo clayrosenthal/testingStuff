@@ -1,0 +1,10 @@
+/Users/clayrosenthal/Git/csc471F19/Project2BClay/build/CMakeFiles/install.dir
+/Users/clayrosenthal/Git/csc471F19/Project2BClay/build/CMakeFiles/proj2.dir
+/Users/clayrosenthal/Git/csc471F19/Project2BClay/build/CMakeFiles/ALL_BUILD.dir
+/Users/clayrosenthal/Git/csc471F19/Project2BClay/build/CMakeFiles/ZERO_CHECK.dir
+/Library/OpenGL_MAC/glfw-mojave-fixes/debug/CMakeFiles/install.dir
+/Library/OpenGL_MAC/glfw-mojave-fixes/debug/CMakeFiles/uninstall.dir
+/Library/OpenGL_MAC/glfw-mojave-fixes/debug/CMakeFiles/ALL_BUILD.dir
+/Library/OpenGL_MAC/glfw-mojave-fixes/debug/CMakeFiles/ZERO_CHECK.dir
+/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/CMakeFiles/install.dir
+/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/CMakeFiles/glfw.dir

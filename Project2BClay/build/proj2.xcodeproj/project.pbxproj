@@ -1,0 +1,1299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2837C31175484861BCAF4105 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 038428FD2AE14223B1F42874 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1FC7C7757244482BAFF9F767 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		3550F1B555CB4DF39BBFA5FE /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 64D7AC5826344BCAABA8BB67 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				62269692414945F4ACE7E5DB /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		6A46BA7C1B204EE8AABD2C0E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 091747F84C7E491FB027D993 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				DBA6ACD8E40141D9BB98B71B /* CMake Rules */,
+			);
+			dependencies = (
+				3CC830A124CC41BA996CA9F9 /* PBXTargetDependency */,
+				FC77B3A5A95247D89E696EDB /* PBXTargetDependency */,
+				E0E621C6F0384BC7B319EB33 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		E0D74BB51DFC4ECAB16E1126 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1026EA6E93A0457BAC4CF08C /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				28E8D92014484BB1A61F4654 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				0CD44BFD8ABF490CBC40B4F6 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0C4C0917A31E4C66A9DC2B52 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = 628F6DAF102F4CCDBE15BE29 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.h */; };
+		0E34173E3F4347E5A9CCA667 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/internal.h */ = {isa = PBXBuildFile; fileRef = 147F567C42AB43C8B14EA83B /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/internal.h */; };
+		0FE22238387843409A99EBDB /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/mappings.h */ = {isa = PBXBuildFile; fileRef = B790537AFC43471790A3E30C /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/mappings.h */; };
+		1493673662F1408DA92B2CFF /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include/glad/glad.h */ = {isa = PBXBuildFile; fileRef = DDA28303EA684856B1A88543 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include/glad/glad.h */; };
+		14E97D7080414D4A83E74AE8 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = 4466FAC01BA34310A214E6CC /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/src/glad.c */; };
+		165F04E727B04DBEB22D3417 /* /Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = B9F3322BE4A94A87883B91B6 /* /Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3.h */; };
+		1D971D0DFE9046AF9EE72F96 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = C6D5D6102F6E41298CA7452B /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.m */; };
+		211DD51A81C94D98893D1860 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6492A31D85C041679C3905D7 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/CMakeLists.txt */; };
+		2242FD66EF9D44C98228932A /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = A2C7EFF0A7A84D7694D8ECB9 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.h */; };
+		26E04B31C0214A5697877BF2 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 391962C816A44B1ABF76DA8F /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.h */; };
+		30523026B5BE4000AC6E3871 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = 5CDC3AD493FF407EAC90C704 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.h */; };
+		306C54188A454B788C94604F /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.cpp */ = {isa = PBXBuildFile; fileRef = B15CEA000CF94616AE3E467D /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.cpp */; };
+		3CE6F8E6ACA6430980021D17 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/tiny_obj_loader.h */ = {isa = PBXBuildFile; fileRef = AD45428AC1E146849EBDDEFC /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/tiny_obj_loader.h */; };
+		3EAD0EEDDE6F4DD19C73A300 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.cpp */ = {isa = PBXBuildFile; fileRef = D6C4E95250034A4C93941FC3 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.cpp */; };
+		40EF3957B70A4FAB80EFF53D /* /Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 47AE004710A04242BED200B0 /* /Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3native.h */; };
+		43AD2A1CB13643309C5A2914 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 2893FD7037B54DE889AB9664 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_platform.h */; };
+		50A012CA690942FBB6CB2677 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 516DA741504D4FC3A7A00FF5 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/monitor.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		5138A3257F7F4D1D9E39ACFF /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = D99947515D6640269652E430 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_window.m */; };
+		5753FA3C21964F90A2743461 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = E2525BD8CB6D44D2B0E85749 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/vulkan.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		57D0DC155358422F829CE0AF /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.h */ = {isa = PBXBuildFile; fileRef = E6A18A6A72784CA2BC07B91C /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.h */; };
+		5A146907440E49F193568BF3 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/context.c */ = {isa = PBXBuildFile; fileRef = DC2D788970F0432AAAFF96C2 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		5C2C59D5E63248798B5E0B0B /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 1E6A28835DD541B2A0238685 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.m */; };
+		64FA273D962B49AFBF16913B /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shader_fragment.glsl */ = {isa = PBXBuildFile; fileRef = A2058FB9264E4E3E949D1E60 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shader_fragment.glsl */; };
+		6E91EA0E4C1D494E88DC3932 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.h */ = {isa = PBXBuildFile; fileRef = 536488B43AB34CDFAA60A111 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.h */; };
+		71972D5B5F9C4EDCA20A8071 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.h */ = {isa = PBXBuildFile; fileRef = 6BB632A7B4684D06BE152A35 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.h */; };
+		74E645AEEC7A49DAAD5827FD /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 2A7618DC56044668AE5B49E8 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_monitor.m */; };
+		76F44A1624044520B77E9119 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/input.c */ = {isa = PBXBuildFile; fileRef = 8FE3BB37CB484E71B201C8F8 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/input.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		78E529F3BD664249A42038FB /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D71824F4099741FDAEDDB7D1 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/CMakeLists.txt */; };
+		84BE2E86003346CCA16A32ED /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = 2293413A85D34B149A7862A9 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.c */; };
+		86D8FDA7FE3A48F181744863 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 69A9347D19024AA2A23DBF53 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_init.m */; };
+		86ED85FBFC4A49639A02CD6B /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/main.cpp */ = {isa = PBXBuildFile; fileRef = EEBE4FBD84DC427D8BDE2C42 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/main.cpp */; };
+		8A654C145463408B8BBE58F4 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = B7C83AC28BBF4E4199B9BFA7 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_time.c */; };
+		9796C95D082F4092B5EF1940 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.cpp */ = {isa = PBXBuildFile; fileRef = 6DFBF0CE65AC40C984B0EF68 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.cpp */; };
+		985234083C034018B6889B0F /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/init.c */ = {isa = PBXBuildFile; fileRef = 9C290F90FC4A4B49BE305618 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/init.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		9C8AFE315A1044EE918D2EBA /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/window.c */ = {isa = PBXBuildFile; fileRef = 9539FD9506D74218949375B6 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/window.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		A324DEB24F06487898D531C2 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.h */ = {isa = PBXBuildFile; fileRef = FA1B73E7A9584E17AB9991F8 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.h */; };
+		A4A8DF2820DD45D98FA18348 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.cpp */ = {isa = PBXBuildFile; fileRef = EC9D7EDD1EB04413AD214217 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.cpp */; };
+		B10105910FFB47A1BE8DC778 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shape_vertex.glsl */ = {isa = PBXBuildFile; fileRef = BA0D2E4C3D8A4FCF900FBF92 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shape_vertex.glsl */; };
+		B86CE540B9654CD1AA8822C9 /* /Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 3D483D56453144B88FB10224 /* /Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/glfw_config.h */; };
+		BA23A216C4234181BF22F19C /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.h */ = {isa = PBXBuildFile; fileRef = 75274D1741E04EAFBBE00C16 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.h */; };
+		BCEC9FBC2FEF429DBAECA14A /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.cpp */ = {isa = PBXBuildFile; fileRef = BF0866AA384A4B1DA4441AA3 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.cpp */; };
+		CE693F0E399E4B07A5EA6D24 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shader_vertex.glsl */ = {isa = PBXBuildFile; fileRef = 4439FB819B114C13B4DAB4EE /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shader_vertex.glsl */; };
+		D3A7DBA943FA4F578F47710F /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include/KHR/khrplatform.h */ = {isa = PBXBuildFile; fileRef = 336C8CE942C7451FAAD6BA81 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include/KHR/khrplatform.h */; };
+		EA810E1FEB2049F78C9DFDD5 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = 4774A99381F94C09B5B33B4C /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.c */; };
+		F6F8D75916B34C4F92238458 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = D10F27B7ECE3468AA8177101 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.h */; };
+		F903DD5FBE714B90AB9BA597 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shape_fragment.glsl */ = {isa = PBXBuildFile; fileRef = 34A838D7C509481BAFCD32D9 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shape_fragment.glsl */; };
+		F9CDE800108C41C29A3360CE /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = AD28A5853C3B4BFBA7DB5E22 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		3B48A9A27AB9472081704EB9 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		4EA984E6F57C40DCB1ABD269 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		CF1336B7FD654917AE311468 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		EA8C2E8833B2466B8133408A /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		281CBEA0975748E8BEC2CDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3502BA1FD9044DA5B7D3A10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A46BA7C1B204EE8AABD2C0E;
+			remoteInfo = ALL_BUILD;
+		};
+		2833FA46E2E042D5920CD608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3502BA1FD9044DA5B7D3A10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8541A6C3634B42ACAF728B67;
+			remoteInfo = proj2;
+		};
+		752611F47E254682BE0C218A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3502BA1FD9044DA5B7D3A10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2837C31175484861BCAF4105;
+			remoteInfo = ZERO_CHECK;
+		};
+		898A98560C5B442680337B82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3502BA1FD9044DA5B7D3A10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2837C31175484861BCAF4105;
+			remoteInfo = ZERO_CHECK;
+		};
+		AC89B1DABEC6463780B3ECBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3502BA1FD9044DA5B7D3A10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2837C31175484861BCAF4105;
+			remoteInfo = ZERO_CHECK;
+		};
+		F610494868D64B4097B2C7F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3502BA1FD9044DA5B7D3A10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C61F04B282E9499B9F90B43A;
+			remoteInfo = glfw;
+		};
+		FF587E75BF9B47D2B1366D0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3502BA1FD9044DA5B7D3A10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C61F04B282E9499B9F90B43A;
+			remoteInfo = glfw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E38C012CF04286B1E2628F /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		147F567C42AB43C8B14EA83B /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		1E6A28835DD541B2A0238685 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		2293413A85D34B149A7862A9 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.c"; sourceTree = SOURCE_ROOT; };
+		2893FD7037B54DE889AB9664 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		2A7618DC56044668AE5B49E8 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		336C8CE942C7451FAAD6BA81 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include/KHR/khrplatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = khrplatform.h; path = ext/glad/include/KHR/khrplatform.h; sourceTree = SOURCE_ROOT; };
+		34A838D7C509481BAFCD32D9 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shape_fragment.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shape_fragment.glsl; path = resources/shape_fragment.glsl; sourceTree = SOURCE_ROOT; };
+		391962C816A44B1ABF76DA8F /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		3D483D56453144B88FB10224 /* /Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		4439FB819B114C13B4DAB4EE /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shader_vertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader_vertex.glsl; path = resources/shader_vertex.glsl; sourceTree = SOURCE_ROOT; };
+		4466FAC01BA34310A214E6CC /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = ext/glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		4774A99381F94C09B5B33B4C /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.c"; sourceTree = SOURCE_ROOT; };
+		47AE004710A04242BED200B0 /* /Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		516DA741504D4FC3A7A00FF5 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		536488B43AB34CDFAA60A111 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Program.h; path = src/Program.h; sourceTree = SOURCE_ROOT; };
+		5CDC3AD493FF407EAC90C704 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.h"; sourceTree = SOURCE_ROOT; };
+		628F6DAF102F4CCDBE15BE29 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.h"; sourceTree = SOURCE_ROOT; };
+		6492A31D85C041679C3905D7 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		69A9347D19024AA2A23DBF53 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		6BB632A7B4684D06BE152A35 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLSL.h; path = src/GLSL.h; sourceTree = SOURCE_ROOT; };
+		6DFBF0CE65AC40C984B0EF68 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLSL.cpp; path = src/GLSL.cpp; sourceTree = SOURCE_ROOT; };
+		75274D1741E04EAFBBE00C16 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Shape.h; path = src/Shape.h; sourceTree = SOURCE_ROOT; };
+		7C5075089F374CD19FA3337F /* /Library/OpenGL_MAC/glfw-mojave-fixes/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		8FE3BB37CB484E71B201C8F8 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/input.c"; sourceTree = SOURCE_ROOT; };
+		9539FD9506D74218949375B6 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/window.c"; sourceTree = SOURCE_ROOT; };
+		9C290F90FC4A4B49BE305618 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/init.c"; sourceTree = SOURCE_ROOT; };
+		9F7728025BD24F46BCE8E903 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A2058FB9264E4E3E949D1E60 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shader_fragment.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shader_fragment.glsl; path = resources/shader_fragment.glsl; sourceTree = SOURCE_ROOT; };
+		A2C7EFF0A7A84D7694D8ECB9 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.h"; sourceTree = SOURCE_ROOT; };
+		AD28A5853C3B4BFBA7DB5E22 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.c"; sourceTree = SOURCE_ROOT; };
+		AD45428AC1E146849EBDDEFC /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/tiny_obj_loader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiny_obj_loader.h; path = src/tiny_obj_loader.h; sourceTree = SOURCE_ROOT; };
+		B15CEA000CF94616AE3E467D /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Program.cpp; path = src/Program.cpp; sourceTree = SOURCE_ROOT; };
+		B790537AFC43471790A3E30C /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/mappings.h"; sourceTree = SOURCE_ROOT; };
+		B7C83AC28BBF4E4199B9BFA7 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
+		B9F3322BE4A94A87883B91B6 /* /Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+		BA0D2E4C3D8A4FCF900FBF92 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shape_vertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = shape_vertex.glsl; path = resources/shape_vertex.glsl; sourceTree = SOURCE_ROOT; };
+		BDA5AB2A065B46C981A91B0E /* proj2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = proj2; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0866AA384A4B1DA4441AA3 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shape.cpp; path = src/Shape.cpp; sourceTree = SOURCE_ROOT; };
+		C6D5D6102F6E41298CA7452B /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
+		D10F27B7ECE3468AA8177101 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
+		D6C4E95250034A4C93941FC3 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MatrixStack.cpp; path = src/MatrixStack.cpp; sourceTree = SOURCE_ROOT; };
+		D71824F4099741FDAEDDB7D1 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D99947515D6640269652E430 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		DC2D788970F0432AAAFF96C2 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/context.c"; sourceTree = SOURCE_ROOT; };
+		DDA28303EA684856B1A88543 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include/glad/glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = ext/glad/include/glad/glad.h; sourceTree = SOURCE_ROOT; };
+		E2525BD8CB6D44D2B0E85749 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "../../../../../Library/OpenGL_MAC/glfw-mojave-fixes/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
+		E6A18A6A72784CA2BC07B91C /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowManager.h; path = src/WindowManager.h; sourceTree = SOURCE_ROOT; };
+		EC9D7EDD1EB04413AD214217 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WindowManager.cpp; path = src/WindowManager.cpp; sourceTree = SOURCE_ROOT; };
+		EEBE4FBD84DC427D8BDE2C42 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		FA1B73E7A9584E17AB9991F8 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MatrixStack.h; path = src/MatrixStack.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		05E2B57EABD04618987DF177 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				336C8CE942C7451FAAD6BA81 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include/KHR/khrplatform.h */,
+				DDA28303EA684856B1A88543 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include/glad/glad.h */,
+				6BB632A7B4684D06BE152A35 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.h */,
+				FA1B73E7A9584E17AB9991F8 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.h */,
+				536488B43AB34CDFAA60A111 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.h */,
+				75274D1741E04EAFBBE00C16 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.h */,
+				E6A18A6A72784CA2BC07B91C /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.h */,
+				AD45428AC1E146849EBDDEFC /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/tiny_obj_loader.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		11C8DAAE6B2C4991A13F47F9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				69A9347D19024AA2A23DBF53 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_init.m */,
+				C6D5D6102F6E41298CA7452B /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.m */,
+				2A7618DC56044668AE5B49E8 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_monitor.m */,
+				B7C83AC28BBF4E4199B9BFA7 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_time.c */,
+				D99947515D6640269652E430 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_window.m */,
+				DC2D788970F0432AAAFF96C2 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/context.c */,
+				4774A99381F94C09B5B33B4C /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.c */,
+				9C290F90FC4A4B49BE305618 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/init.c */,
+				8FE3BB37CB484E71B201C8F8 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/input.c */,
+				516DA741504D4FC3A7A00FF5 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/monitor.c */,
+				1E6A28835DD541B2A0238685 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.m */,
+				2293413A85D34B149A7862A9 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.c */,
+				AD28A5853C3B4BFBA7DB5E22 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.c */,
+				E2525BD8CB6D44D2B0E85749 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/vulkan.c */,
+				9539FD9506D74218949375B6 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		503C676016044F0881A9A4A9 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				5C6ED0419FCA4C8DA22C6E17 /* CMake Rules */,
+				9F7728025BD24F46BCE8E903 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5C6ED0419FCA4C8DA22C6E17 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		69565EEAA35C4E0EA29C3DAD /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D483D56453144B88FB10224 /* /Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/glfw_config.h */,
+				B9F3322BE4A94A87883B91B6 /* /Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3.h */,
+				47AE004710A04242BED200B0 /* /Library/OpenGL_MAC/glfw-mojave-fixes/include/GLFW/glfw3native.h */,
+				D10F27B7ECE3468AA8177101 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.h */,
+				2893FD7037B54DE889AB9664 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_platform.h */,
+				A2C7EFF0A7A84D7694D8ECB9 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.h */,
+				147F567C42AB43C8B14EA83B /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/internal.h */,
+				B790537AFC43471790A3E30C /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/mappings.h */,
+				391962C816A44B1ABF76DA8F /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.h */,
+				628F6DAF102F4CCDBE15BE29 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.h */,
+				5CDC3AD493FF407EAC90C704 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		6A8F25EDE6E745B893E76AE9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4466FAC01BA34310A214E6CC /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/src/glad.c */,
+				6DFBF0CE65AC40C984B0EF68 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.cpp */,
+				D6C4E95250034A4C93941FC3 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.cpp */,
+				B15CEA000CF94616AE3E467D /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.cpp */,
+				BF0866AA384A4B1DA4441AA3 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.cpp */,
+				EC9D7EDD1EB04413AD214217 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.cpp */,
+				EEBE4FBD84DC427D8BDE2C42 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6C476A64E2F142D0A1FC5624 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				ACABF57340C849F9A06A65D4 /* uninstall */,
+				A54F5966E1C043999D0F1319 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		9ABA62AB244E487196DAA575 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01E38C012CF04286B1E2628F /* glfw */,
+				BDA5AB2A065B46C981A91B0E /* proj2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A54F5966E1C043999D0F1319 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				11C8DAAE6B2C4991A13F47F9 /* Source Files */,
+				69565EEAA35C4E0EA29C3DAD /* Header Files */,
+				6492A31D85C041679C3905D7 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		ACABF57340C849F9A06A65D4 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				E52E7357C4F64A9E906C3EEE /* CMake Rules */,
+				7C5075089F374CD19FA3337F /* /Library/OpenGL_MAC/glfw-mojave-fixes/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		D23DAFDC6B6544B495BDBD13 /* proj2 */ = {
+			isa = PBXGroup;
+			children = (
+				6A8F25EDE6E745B893E76AE9 /* Source Files */,
+				05E2B57EABD04618987DF177 /* Header Files */,
+				D71824F4099741FDAEDDB7D1 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/CMakeLists.txt */,
+				A2058FB9264E4E3E949D1E60 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shader_fragment.glsl */,
+				4439FB819B114C13B4DAB4EE /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shader_vertex.glsl */,
+				34A838D7C509481BAFCD32D9 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shape_fragment.glsl */,
+				BA0D2E4C3D8A4FCF900FBF92 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/resources/shape_vertex.glsl */,
+			);
+			name = proj2;
+			sourceTree = "<group>";
+		};
+		E52E7357C4F64A9E906C3EEE /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F7940342AC7E4100B25312EE = {
+			isa = PBXGroup;
+			children = (
+				D23DAFDC6B6544B495BDBD13 /* proj2 */,
+				503C676016044F0881A9A4A9 /* ALL_BUILD */,
+				6C476A64E2F142D0A1FC5624 /* GLFW3 */,
+				9ABA62AB244E487196DAA575 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8541A6C3634B42ACAF728B67 /* proj2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F05C0E4E0FF42298D4A1D08 /* Build configuration list for PBXNativeTarget "proj2" */;
+			buildPhases = (
+				13DDB0E6BC244C68AD5227D2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B5297563BCF498DA1C70FC2 /* PBXTargetDependency */,
+				85D378F117A44540937D965E /* PBXTargetDependency */,
+			);
+			name = proj2;
+			productName = proj2;
+			productReference = BDA5AB2A065B46C981A91B0E /* proj2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		C61F04B282E9499B9F90B43A /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5948A181FACB4ECFA1507665 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				6D08D2797DB84CA2922456C1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D73FB9D832E4617B5C0A82E /* PBXTargetDependency */,
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 01E38C012CF04286B1E2628F /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3502BA1FD9044DA5B7D3A10A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1110;
+			};
+			buildConfigurationList = AB930FBAE8D844CEB6D42111 /* Build configuration list for PBXProject "proj2" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				CF1336B7FD654917AE311468 /* Debug */,
+				3B48A9A27AB9472081704EB9 /* Release */,
+				4EA984E6F57C40DCB1ABD269 /* MinSizeRel */,
+				EA8C2E8833B2466B8133408A /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = F7940342AC7E4100B25312EE;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				6A46BA7C1B204EE8AABD2C0E /* ALL_BUILD */,
+				2837C31175484861BCAF4105 /* ZERO_CHECK */,
+				C61F04B282E9499B9F90B43A /* glfw */,
+				E0D74BB51DFC4ECAB16E1126 /* install */,
+				8541A6C3634B42ACAF728B67 /* proj2 */,
+				3550F1B555CB4DF39BBFA5FE /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		020B8E60256940129049D7D2 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		1FC7C7757244482BAFF9F767 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/clayrosenthal/Git/csc471F19/Project2BClay/build -f /Users/clayrosenthal/Git/csc471F19/Project2BClay/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		28E8D92014484BB1A61F4654 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/clayrosenthal/Git/csc471F19/Project2BClay/build -f /Users/clayrosenthal/Git/csc471F19/Project2BClay/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		494E4E1C704643B0A581BDC9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		62269692414945F4ACE7E5DB /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Library/OpenGL_MAC/glfw-mojave-fixes/debug -f /Library/OpenGL_MAC/glfw-mojave-fixes/debug/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		7CC0711192F44EA0B27B7F89 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		DBA6ACD8E40141D9BB98B71B /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/clayrosenthal/Git/csc471F19/Project2BClay/build -f /Users/clayrosenthal/Git/csc471F19/Project2BClay/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		F1F0F3641C044B98B81BE9F9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13DDB0E6BC244C68AD5227D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E97D7080414D4A83E74AE8 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/src/glad.c */,
+				9796C95D082F4092B5EF1940 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/GLSL.cpp */,
+				3EAD0EEDDE6F4DD19C73A300 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/MatrixStack.cpp */,
+				306C54188A454B788C94604F /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Program.cpp */,
+				BCEC9FBC2FEF429DBAECA14A /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/Shape.cpp */,
+				A4A8DF2820DD45D98FA18348 /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/WindowManager.cpp */,
+				86ED85FBFC4A49639A02CD6B /* /Users/clayrosenthal/Git/csc471F19/Project2BClay/src/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D08D2797DB84CA2922456C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D8FDA7FE3A48F181744863 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_init.m */,
+				1D971D0DFE9046AF9EE72F96 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_joystick.m */,
+				74E645AEEC7A49DAAD5827FD /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_monitor.m */,
+				8A654C145463408B8BBE58F4 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_time.c */,
+				5138A3257F7F4D1D9E39ACFF /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/cocoa_window.m */,
+				5A146907440E49F193568BF3 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/context.c */,
+				EA810E1FEB2049F78C9DFDD5 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/egl_context.c */,
+				985234083C034018B6889B0F /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/init.c */,
+				76F44A1624044520B77E9119 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/input.c */,
+				50A012CA690942FBB6CB2677 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/monitor.c */,
+				5C2C59D5E63248798B5E0B0B /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/nsgl_context.m */,
+				84BE2E86003346CCA16A32ED /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/osmesa_context.c */,
+				F9CDE800108C41C29A3360CE /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/posix_thread.c */,
+				5753FA3C21964F90A2743461 /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/vulkan.c */,
+				9C8AFE315A1044EE918D2EBA /* /Library/OpenGL_MAC/glfw-mojave-fixes/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CD44BFD8ABF490CBC40B4F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A46BA7C1B204EE8AABD2C0E /* ALL_BUILD */;
+			targetProxy = 281CBEA0975748E8BEC2CDDB /* PBXContainerItemProxy */;
+		};
+		3CC830A124CC41BA996CA9F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8541A6C3634B42ACAF728B67 /* proj2 */;
+			targetProxy = 2833FA46E2E042D5920CD608 /* PBXContainerItemProxy */;
+		};
+		5D73FB9D832E4617B5C0A82E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2837C31175484861BCAF4105 /* ZERO_CHECK */;
+			targetProxy = 898A98560C5B442680337B82 /* PBXContainerItemProxy */;
+		};
+		85D378F117A44540937D965E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2837C31175484861BCAF4105 /* ZERO_CHECK */;
+			targetProxy = AC89B1DABEC6463780B3ECBE /* PBXContainerItemProxy */;
+		};
+		8B5297563BCF498DA1C70FC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C61F04B282E9499B9F90B43A /* glfw */;
+			targetProxy = FF587E75BF9B47D2B1366D0E /* PBXContainerItemProxy */;
+		};
+		E0E621C6F0384BC7B319EB33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2837C31175484861BCAF4105 /* ZERO_CHECK */;
+			targetProxy = 752611F47E254682BE0C218A /* PBXContainerItemProxy */;
+		};
+		FC77B3A5A95247D89E696EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C61F04B282E9499B9F90B43A /* glfw */;
+			targetProxy = F610494868D64B4097B2C7F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		007CCDED7BA34419B6CC8B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		0B6722D49A16466795B9E913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include,"/Library/OpenGL_MAC/glfw-mojave-fixes/include","/Library/OpenGL_MAC/glm-0.9.8.3");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/Release/libglfw3.a -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = proj2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0DB6DF919F4A4610BD1E1234 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		127ACD21F96F486D9FD23FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		176514FC8B1F4CA7B741D2B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		18F48F03549D450AA416C0A0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		204A181308C84B87B8E87819 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include,"/Library/OpenGL_MAC/glfw-mojave-fixes/include","/Library/OpenGL_MAC/glfw-mojave-fixes/src","/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		204E98A9EBD84DE7A0BD2270 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		209F6B21DE8E46DEA8D4AB2C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Library/OpenGL_MAC/glfw-mojave-fixes/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		33754EFDC5504A1F88F2CB56 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		356C5D3C3B91483491B88D33 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3E5D99FC00D743BC85C27FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Library/OpenGL_MAC/glfw-mojave-fixes/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4065081342274F21A17F0119 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include,"/Library/OpenGL_MAC/glfw-mojave-fixes/include","/Library/OpenGL_MAC/glfw-mojave-fixes/src","/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5535521B7C964AB49104C35A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5BAD63A631E54967B82F5171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8642119DBCF243888895F5E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		91166507CB824E19AF015C7F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include,"/Library/OpenGL_MAC/glfw-mojave-fixes/include","/Library/OpenGL_MAC/glm-0.9.8.3");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/MinSizeRel/libglfw3.a -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = proj2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9197858E742D4D739684AA30 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include,"/Library/OpenGL_MAC/glfw-mojave-fixes/include","/Library/OpenGL_MAC/glm-0.9.8.3");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/RelWithDebInfo/libglfw3.a -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = proj2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A9C8402D09E24D1D9F77F2B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include,"/Library/OpenGL_MAC/glfw-mojave-fixes/include","/Library/OpenGL_MAC/glfw-mojave-fixes/src","/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		AF63D6152EDD4E2098C175B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B2BEA96B7C154A859B7591FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include,"/Library/OpenGL_MAC/glfw-mojave-fixes/include","/Library/OpenGL_MAC/glfw-mojave-fixes/src","/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Library/OpenGL_MAC/glfw-mojave-fixes/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		BBAE5BBE207F41C4AF2B56D7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build/build;
+			};
+			name = MinSizeRel;
+		};
+		BC950337B79843F7A17A806A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/clayrosenthal/Git/csc471F19/Project2BClay/ext/glad/include,"/Library/OpenGL_MAC/glfw-mojave-fixes/include","/Library/OpenGL_MAC/glm-0.9.8.3");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++0x -Wall -pedantic     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Library/OpenGL_MAC/glfw-mojave-fixes/debug/src/Debug/libglfw3.a -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = proj2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		BCD162C362B74C7F9FC77763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build/build;
+			};
+			name = Release;
+		};
+		C26CA53F12E34A04832E1D55 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Library/OpenGL_MAC/glfw-mojave-fixes/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D42347AE846949D698A11BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Library/OpenGL_MAC/glfw-mojave-fixes/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		EF972B06A699428A9AF19E91 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		FA9FCF68802B421E815F00BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/clayrosenthal/Git/csc471F19/Project2BClay/build/build;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038428FD2AE14223B1F42874 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BAD63A631E54967B82F5171 /* Debug */,
+				127ACD21F96F486D9FD23FBB /* Release */,
+				204E98A9EBD84DE7A0BD2270 /* MinSizeRel */,
+				356C5D3C3B91483491B88D33 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		091747F84C7E491FB027D993 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8642119DBCF243888895F5E1 /* Debug */,
+				AF63D6152EDD4E2098C175B7 /* Release */,
+				5535521B7C964AB49104C35A /* MinSizeRel */,
+				33754EFDC5504A1F88F2CB56 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1026EA6E93A0457BAC4CF08C /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				007CCDED7BA34419B6CC8B6A /* Debug */,
+				176514FC8B1F4CA7B741D2B4 /* Release */,
+				18F48F03549D450AA416C0A0 /* MinSizeRel */,
+				0DB6DF919F4A4610BD1E1234 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3F05C0E4E0FF42298D4A1D08 /* Build configuration list for PBXNativeTarget "proj2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC950337B79843F7A17A806A /* Debug */,
+				0B6722D49A16466795B9E913 /* Release */,
+				91166507CB824E19AF015C7F /* MinSizeRel */,
+				9197858E742D4D739684AA30 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5948A181FACB4ECFA1507665 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2BEA96B7C154A859B7591FB /* Debug */,
+				A9C8402D09E24D1D9F77F2B4 /* Release */,
+				204A181308C84B87B8E87819 /* MinSizeRel */,
+				4065081342274F21A17F0119 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		64D7AC5826344BCAABA8BB67 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42347AE846949D698A11BA0 /* Debug */,
+				3E5D99FC00D743BC85C27FDB /* Release */,
+				C26CA53F12E34A04832E1D55 /* MinSizeRel */,
+				209F6B21DE8E46DEA8D4AB2C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AB930FBAE8D844CEB6D42111 /* Build configuration list for PBXProject "proj2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9FCF68802B421E815F00BD /* Debug */,
+				BCD162C362B74C7F9FC77763 /* Release */,
+				BBAE5BBE207F41C4AF2B56D7 /* MinSizeRel */,
+				EF972B06A699428A9AF19E91 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3502BA1FD9044DA5B7D3A10A /* Project object */;
+}
